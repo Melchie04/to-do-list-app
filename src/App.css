@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  background-image: url('./images/background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #7B7270;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box {
+  background-color: rgba(0, 0, 0, .60);
+  max-width: 80vw;
+  padding: 2rem;
+  margin: 10vh auto;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border: .5px solid #000000;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.scroll-container {
+  max-height: 50vh;
 }
 
-.App-link {
-  color: #61dafb;
+.scroll-container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.scroll-container::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb
+{
+	background-image: linear-gradient(to right top, #1ECBE1, #145760, #1ECBE1);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+@media screen and (max-width: 720px) {
+  .box {
+    max-width: 90vw;
+    padding: 1rem;
   }
 }

@@ -1,0 +1,24 @@
+.task-bg {
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.task-bg .icons-wrap span {
+  margin: 0px 10px 0 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .task-bg .icons-wrap span {
+    margin: 0px 8px 0 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .task-bg .icons-wrap span {
+    margin: 0px 4px 0 4px;
+  }
+}
