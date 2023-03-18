@@ -92,7 +92,8 @@ function App() {
             />
           )}
         </div>
-        <div className='overflow-auto scroll-container'>
+        {/* <div className='overflow-auto scroll-container'> */}
+        <div>
           {toDo && toDo.length ? '' : (
             <span className='fs-6 text-muted'>No tasks. Create your to-do list now.</span>
           )}
